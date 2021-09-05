@@ -12,7 +12,7 @@ export const ScreenDetalles = () => {
     const {data} = useSelector( state => state.nota );
     
 
-    const { counter, increment, decrement } = useCounter( 0);
+    const { counter, increment, decrement } = useCounter( 0 );
     
 
     if (!data.length) {

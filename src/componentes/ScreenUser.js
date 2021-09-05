@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Redirect, useParams } from 'react-router';
 import { sumarDonacion } from '../actions/data';
 import { personajeById } from '../helpers/personajeById';
+import { useCounter } from '../hook/counter';
 import'../index.css'
 
 export const ScreenUser = ({history}) => {
@@ -20,11 +21,12 @@ export const ScreenUser = ({history}) => {
         return <Redirect to="/" />;
     }
 
-   
+  
 
     const handleReturn =()=>{
-    
-        history.push('/');
+        history.goBack();
+        // history.
+        push('/');
     }
 
     const handleMake=()=>{
