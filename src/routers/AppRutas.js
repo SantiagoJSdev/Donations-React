@@ -14,7 +14,6 @@ import { ScreenUser } from "../componentes/ScreenUser";
 import { useSelector } from "react-redux";
 
 
-
 export const AppRutas = () => {
 
   const dispatch = useDispatch();
@@ -33,9 +32,6 @@ export const AppRutas = () => {
     return <h1>Espere</h1>
   
    } 
-
-
-
   
   return (
 

@@ -12,16 +12,13 @@ export const ScreenDetalles = () => {
 
     const { counter, increment, decrement } = useCounter( 0 );
     
-
     if (!data.length) {
        return <h1>Espere</h1>
     }
     
-
+    
     return (
     
-        
-
         <div>
             
                 <div className="card ms-3 centrarCaja2 bg-dark" style={ { maxWidth: 540 } }>
@@ -36,7 +33,6 @@ export const ScreenDetalles = () => {
                               <p className="card-text">
                                <small className="text-muted"> TOTAL DONATIONS {data[counter].donations } </small>
                                 </p>
-
 
                                             <Link to={ `/user/${data[counter].id}`}>
                                               <button
@@ -72,15 +68,10 @@ export const ScreenDetalles = () => {
                                               </button>
                                               </Link>
 
-
                         </div>
                      </div>
                  </div>
                 </div>
-
-              
- 
-
 
                 <div className="card ms-3  centrarCaja2 bg-dark" style={ { maxWidth: 540  }}>
                     <div className="row no-gutters">
@@ -104,8 +95,6 @@ export const ScreenDetalles = () => {
                                                <i className="fas fa-arrow-alt-circle-right"></i>
                                               </button>
                                               </Link>
-
-
 
                         </div>
                      </div>

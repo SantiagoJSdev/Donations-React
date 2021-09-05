@@ -1,6 +1,6 @@
 import { types } from "../type/types"
 import {fetchData} from "../fetch/fetch"
-// import { basedatos } from "../componentes/basedatos"
+
 import { filtrarDataMenor, totalDonation, filtrarDataMayor } from "../helpers/personajeById"
 
 
@@ -11,7 +11,7 @@ export const usuarios = ()=> {
         const usuario = await fetchData()
         dispatch(data(usuario))
         dispatch(totalDonacionState(usuario))
-        // dispatch(data(basedatos))
+        
     }
 } 
 export const data = (usuario) => {
