@@ -25,8 +25,7 @@ export const ScreenUser = ({history}) => {
 
     const handleReturn =()=>{
         history.goBack();
-        // history.
-        push('/');
+        // history.        push('/');
     }
 
     const handleMake=()=>{
