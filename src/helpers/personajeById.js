@@ -13,7 +13,7 @@ export const totalDonation = ( data ) => {
 let acu = 0;
    data.map((ele)=>{
       
-    acu += ele.total
+   return acu += ele.total
     
   })
      return acu  
@@ -47,7 +47,6 @@ export const filtrarDataMenor = ( data ) => {
       return nuevoArray
       }
    
-
 
 
 export const filtrarDataMayor = ( data ) => {

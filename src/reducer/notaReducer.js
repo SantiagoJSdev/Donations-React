@@ -1,5 +1,4 @@
 
-
 import { types } from '../type/types';
 
 const initialState = {
@@ -17,8 +16,6 @@ export const notaReducer = (state = initialState, action) => {
             ...state,
            data: action.payload,
            loading: true
-           
-          
         }
     case types.suma:
         return {
@@ -42,9 +39,6 @@ export const notaReducer = (state = initialState, action) => {
             total: action.payload
 
         }
-
-
-     
        default:
            return state;
    }

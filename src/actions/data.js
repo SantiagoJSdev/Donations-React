@@ -1,6 +1,6 @@
 import { types } from "../type/types"
 import {fetchData} from "../fetch/fetch"
-import { basedatos } from "../componentes/basedatos"
+// import { basedatos } from "../componentes/basedatos"
 import { filtrarDataMenor, totalDonation, filtrarDataMayor } from "../helpers/personajeById"
 
 
@@ -9,17 +9,11 @@ import { filtrarDataMenor, totalDonation, filtrarDataMayor } from "../helpers/pe
 export const usuarios = ()=> {
     return async(dispatch)=>{
         const usuario = await fetchData()
-        // const {data} = getState().nota
-        // console.log(data)
-        // const total = totalDonation(data)//basedatos
         dispatch(data(usuario))
-        // dispatch(data(basedatos, total))
+        dispatch(totalDonacionState(usuario))
+        // dispatch(data(basedatos))
     }
-
-
 } 
-
-
 export const data = (usuario) => {
 
     return {
@@ -47,9 +41,6 @@ export const sumarDonacion=(donacion)=>{
         type: types.suma,
         payload: donacion
         }
-
-
-
     }
 
 export const ordenarMenor=(data)=>{
@@ -61,9 +52,6 @@ export const ordenarMenor=(data)=>{
         type: types.menor,
         payload: nuevo
         }
-
-
-
     }
 
 export const ordenarMayor=(data)=>{

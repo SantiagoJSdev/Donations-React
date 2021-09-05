@@ -1,10 +1,5 @@
 
-
-
     // const url = 'https://moadw-challenge.herokuapp.com/api/find-one?id={string}'
-
-    
-    
     // const getText =  async(url) =>  {
       
     //     try{

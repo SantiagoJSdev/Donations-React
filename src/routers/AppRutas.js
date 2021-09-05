@@ -23,7 +23,7 @@ export const AppRutas = () => {
   
   useEffect(() => {
       dispatch(usuarios()) 
-     
+    
       
   }, [dispatch])
 

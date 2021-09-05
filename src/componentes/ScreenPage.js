@@ -1,8 +1,8 @@
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
-import { ordenarMayor, ordenarMenor, totalDonacionState } from '../actions/data';
+import { ordenarMayor, ordenarMenor } from '../actions/data';
 
 
 
@@ -18,16 +18,6 @@ export const ScreenPage = () => {
 
     const {data} = useSelector( state => state.nota );
   
-    
-    
-    useEffect(() => {
-     
-        dispatch(totalDonacionState(data))
-   
-        
-       
-    }, [data])
-
 
  const handleMayor=()=>{
 

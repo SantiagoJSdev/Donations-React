@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import { useCounter } from '../hook/counter';
 import '../index.css'
 
-
-
 export const ScreenDetalles = () => {
 
     const {data} = useSelector( state => state.nota );
@@ -26,8 +24,6 @@ export const ScreenDetalles = () => {
 
         <div>
             
-              
-
                 <div className="card ms-3 centrarCaja2 bg-dark" style={ { maxWidth: 540 } }>
                     <div className="row no-gutters">
                          <div className="col-md-4">
