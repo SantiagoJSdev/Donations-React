@@ -12,12 +12,12 @@ export const useCounter = ( initialState = 0 ) => {
 
     const increment = () => {
        
-        setCounter( counter + 1 );
+        setCounter( counter + 3 );
     }
 
     const decrement = () => {
        
-        setCounter( counter - 1 );
+        setCounter( counter - 3 );
     }
     return {
         counter,

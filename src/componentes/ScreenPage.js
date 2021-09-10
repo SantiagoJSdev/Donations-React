@@ -1,7 +1,9 @@
 
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import '../index.css'
+// import '../index.css'
+
+import'../styles.css'
 
 import { ScreenDetalles } from './ScreenDetalles';
 import { ordenarMayor, ordenarMenor } from '../actions/data';
@@ -25,39 +27,25 @@ const handleMenor=()=>{
     return (
         <div>
                       
-             <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-                <h1>Donations</h1> 
-                 <div className="navbar-collapse">
-                 <div className="navbar-nav">
-                 </div>
-                 </div>
-                <div className="navbar-collapse collapse w-300 order-3 dual-collapse2 ">
-                    <ul className="navbar-nav ml-auto">
-                <div className="dropdown">
-                <button className="btn btn-primary bg-dark dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                 Sort By Donations
-                </button>
-                  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li>
-                          <button 
-                            onClick={handleMayor}
-                            className="dropdown-item"
-                          
-                            >Mayor</button></li>
-                        <li>
-                          <button
+           
+
+            <div className="div-1">
+                 <div className="div-4 color">
+                    <h1 className="h1-1">Donations</h1>
+                    <div className="dropdown">
+                        <button className="dropdown-btn"><p id="p-3">Sort By Donations</p></button>
+                        <div className="dropdown-content">
+                            <a 
                             onClick={handleMenor}
-                            className="dropdown-item" 
-                        
-                       >Menor</button></li>
-                    
-                    </ul>
-                </div>
-                  
-                </ul>   
+                            className="a-1" href="#">Mayor</a>
+                            <a onClick={handleMayor} className="a-1" href="#">Menor</a>
+                            
+                        </div>
+                    </div>
+
+                 </div>
             </div>
-            </nav>           
-        <hr></hr>
+
            
             <ScreenDetalles/>
         </div>
